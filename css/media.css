@@ -1,0 +1,12 @@
+@media screen and (max-width: 600px) {
+  header {
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .cart {
+    display: none;
+  }
+}
