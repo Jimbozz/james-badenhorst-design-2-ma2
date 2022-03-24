@@ -22,7 +22,6 @@ body {
   margin: 0;
   padding: 0;
   color: var(--color-text);
-  background-color: var(--color-main);
 }
 
 h1,
@@ -95,8 +94,8 @@ header h1 {
 .hero {
   display: flex;
   flex-direction: column;
-  padding: 7rem;
-  gap: 3rem;
+  padding: 10rem;
+  gap: 2rem;
   justify-content: center;
   max-width: 1000px;
   margin: 0 auto;
@@ -105,7 +104,20 @@ header h1 {
 }
 
 .hero-container {
-  background-image: url(/assets/images/hero-image.jpg);
+  position: relative;
+  padding: 4rem;
+}
+
+.hero-container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url(/assets/images/Sill_-11.jpg);
+  background-size: cover;
+  filter: contrast(100%) brightness(70%);
 }
 
 .hero div {
@@ -117,6 +129,11 @@ header h1 {
   font-size: 4rem;
   margin: 0px;
   line-height: 1.2;
+  position: relative;
+}
+
+.hero p {
+  position: relative;
 }
 
 .hero-image {
