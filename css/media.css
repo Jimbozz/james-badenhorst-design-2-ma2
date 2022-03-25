@@ -3,6 +3,14 @@
     justify-content: center;
     gap: 1rem;
   }
+
+  .hero {
+    padding: 0px 2rem;
+  }
+
+  .hero-title {
+    font-size: 3.2rem;
+  }
 }
 
 @media screen and (max-width: 750px) {
